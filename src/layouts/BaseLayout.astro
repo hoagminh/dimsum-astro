@@ -1,0 +1,42 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+	pageTitle: string;
+}
+
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>	
+		<Header/>
+		<div class="relative">
+			<img src="/assets/images/bg.jpg" alt="" class="absolute inset-0 -z-10 w-full">
+			<slot />
+		</div>
+		<Footer/>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--red-1: #F65F5F;
+	}
+	html {
+		background: #13151a;
+	}
+	h2 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+</style>
