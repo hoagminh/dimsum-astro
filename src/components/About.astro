@@ -1,0 +1,122 @@
+---
+
+---
+<section id="about" class="py-32">
+    <div class="container mx-auto">
+        <div class="flex flex-col gap-28">
+            <div class="flex flex-col items-center text-white">
+                <h2 class="text-5xl font-bold text-center">
+                    <span class="text-red-500">Top</span> Những <span class="text-yellow-500">Món Ăn</span> Sẽ Khiến <br/> Bạn <span class="text-red-500">Yêu Thích</span>
+                </h2>
+                <p class="mt-10 max-w-[50%] text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s</p>
+                <div class="flex gap-7 mt-7">
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white bg-red-400">Dim sum</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">Panacotta</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">Dumplings</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">Yaourt</button>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex flex-col w-[40%]">
+                    <img src="/assets/images/artbody.png" alt="chief" class="w-[80%]">
+                    <div class="text-white">
+                        <h2 class="text-5xl font-black">Há Cảo <span class="text-red-500">Kiều Ký</span> - Lão Tử </h2>
+                        <p class="mt-10 text-justify font-poppins">Nhà hàng dimsum San Fu Lou là một trong những địa chỉ chuyên món ngon 
+                          Trung Hoa rất được yêu thích tại Sài Gòn. Thiên đường ẩm thực Quảng Đông 
+                          này có đa dạng các loại dimsum trứ danh như bánh bao trứng muối Phong 
+                          Sa, há cảo tôm sò điệp tươi, há cảo vịt,... Bên cạnh dimsum, thực khách cũng
+                          có thể thưởng thức các món ngon khác như gà tiềm trúc xanh, cơm chiên 
+                          Quảng Đông,... Không gian ăn uống cũng mang đậm kiến trúc Quảng Đông 
+                          với những dãy bàn ghế gỗ, đèn lồng đỏ treo trần rất thu hút.</p>
+                    </div>
+                </div>
+                
+                <div class="slideshow flex-1">
+                    <div class="carousel">
+                      <div class="slide active">
+                        <img src="/assets/images/d1.png" />
+                      </div>
+                      <div class="slide">
+                        <img src="/assets/images/d2.png" />
+                      </div>
+                      <div class="slide">
+                        <img src="/assets/images/d3.png" />
+                      </div>
+                      <div class="slide">
+                        <img src="/assets/images/background/dimsum.png" />
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.slideshow {
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -35%;
+  flex-shrink: 0;
+  transition: rotate 2s;
+}
+
+.slide {
+  width: 320px;
+  position: absolute;
+}
+
+.slide:nth-child(1) {
+  bottom: -20rem;
+  transform: rotate(-90deg);
+}
+
+.slide:nth-child(2) {
+  left: -20rem;
+  transform: rotate(-90deg);
+}
+
+.slide:nth-child(3) {
+  top: -20rem;
+  transform: rotate(-90deg);
+}
+
+.slide:nth-child(4) {
+  right: -20rem;
+  transform: rotate(-90deg);
+}
+
+.slide.active img {
+  transform: scale(1.75);
+  transition: transform 0.5s 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.rotateImg{
+  transform: rotate(-90deg);
+}
+</style>
+
+<script src="../scripts/carousel.js"></script>

@@ -16,13 +16,18 @@ const { pageTitle } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
 	<body>	
 		<Header/>
 		<div class="relative">
-			<img src="/assets/images/bg.jpg" alt="" class="absolute inset-0 -z-10 w-full">
+			<img src="/assets/images/background/BackgroundBn.png" alt="" class="absolute top-0 right-0 -z-10">
+			<img src="/assets/images/bg.jpg" alt="" class="absolute inset-0 -z-20 w-full">
 			<slot />
 		</div>
 		<Footer/>
@@ -34,9 +39,18 @@ const { pageTitle } = Astro.props;
 	}
 	html {
 		background: #13151a;
+		scroll-behavior: smooth;
+		transition: scroll ease-in 5s;
 	}
-	h2 {
-		font-size: 24px;
-		font-weight: 600;
+
+	body{
+		font-family: Roboto;
 	}
+	h1 {
+  		font-size: 72px;
+  		background: linear-gradient(147deg, #F2E9D7 18.73%, #F8D48B 81.27%);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}
+	
 </style>

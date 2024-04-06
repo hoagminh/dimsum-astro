@@ -8,4 +8,5 @@ price: '17.000'
 image:
     url: 'assets/images/food/food2.png'
     alt: "Food 2"
+category: "food"
 ---
