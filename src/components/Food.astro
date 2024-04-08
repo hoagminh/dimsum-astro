@@ -6,13 +6,13 @@ const Foods = allFoods.filter((food) => food.frontmatter.category === "food")
 const Drinks = allFoods.filter((drink) => drink.frontmatter.category === "drink")
 
 ---
-<section id="food" class="py-32">
-    <div class="container mx-auto">
-        <div class="flex flex-col gap-56">
+<section id="food" class="md:py-32">
+    <div class="container mx-auto px-3">
+        <div class="flex flex-col gap-14 md:gap-56">
             <div class="flex flex-col items-center text-white">
-                <h2 class="text-5xl font-bold">Ưu Đãi <span class="text-red-500">Đặc Biệt</span> Hôm Nay</h2>
-                <p class="mt-10 max-w-[50%] text-lg text-center font-poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div class="flex gap-7 mt-7 control">
+                <h2 class="text-5xl font-bold text-center">Ưu Đãi <span class="text-red-500">Đặc Biệt</span> Hôm Nay</h2>
+                <p class="mt-5 md:mt-10 w-full md:max-w-[50%] md:text-lg text-center font-poppins">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <div class="flex gap-5 mt-7 flex-wrap justify-center control">
                     <button class="px-4 py-2 rounded-3xl border border-white btn active">Bữa sáng</button>
                     <button class="px-4 py-2 rounded-3xl border border-white btn">Bữa trưa</button>
                     <button class="px-4 py-2 rounded-3xl border border-white btn">Bữa chiều</button>
@@ -20,7 +20,7 @@ const Drinks = allFoods.filter((drink) => drink.frontmatter.category === "drink"
                 </div>
             </div>
 
-            <div class="grid grid-cols-4 gap-8 mt-28">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-28">
                 {Foods.map((food) => <ProductCard title={food.frontmatter.title} url={food.frontmatter.image.url} alt={food.frontmatter.image.alt} description={food.frontmatter.description} price={food.frontmatter.price}/>)}
             </div>
         </div>

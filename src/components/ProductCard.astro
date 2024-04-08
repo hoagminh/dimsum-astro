@@ -10,13 +10,13 @@ interface Props {
 const {url, alt, title, description, price} = Astro.props
 ---
 
-<div class="mb-24">
-	<div id="card" class=" flex flex-col items-center p-8 rounded-[65px] border-8 bg-white border-gray-300 gap-4">
-		<div class="relative w-full h-20">
-			<img src={url} alt={alt} class="w-full absolute -top-[150px] inset-x-0 scale-125">
+<div class="mb-14 md:mb-24">
+	<div id="card" class=" flex flex-col items-center p-4 md:p-8 rounded-[65px] border-8 bg-white border-gray-300 gap-2 md:gap-4">
+		<div class="relative w-full h-5 md:h-20">
+			<img src={url} alt={alt} class="w-full absolute -top-24 md:-top-[150px] inset-x-0 scale-125">
 		</div>
-		<h2 class="text-xl font-medium">{title}</h2>
-		<p class="capitalize">{description}</p>
-		<span class="text-lg font-bold text-yellow-600">{price}</span>
+		<h2 class="text-base md:text-xl font-medium">{title}</h2>
+		<p class="capitalize text-xs md:text-base">{description}</p>
+		<span class="text-base md:text-lg font-bold text-yellow-600">{price}</span>
 	</div>
 </div>

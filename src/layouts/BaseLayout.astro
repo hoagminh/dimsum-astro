@@ -23,11 +23,12 @@ const { pageTitle } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<body>	
+	<body class="relative">	
 		<Header/>
-		<div class="relative">
-			<img src="/assets/images/background/BackgroundBn.png" alt="" class="absolute top-0 right-0 -z-10">
-			<img src="/assets/images/bg.jpg" alt="" class="absolute inset-0 -z-20 w-full">
+		<img src="/assets/images/background/mobile.png" alt="bg-mobile" class="h-full absolute top-0 right-0 left-0 -z-10 block md:hidden">
+		<div class="relative h-full w-full">
+			<img src="/assets/images/background/BackgroundBn.png" alt="bg-desktop" class="absolute top-0 right-0 -z-10 hidden md:block">
+			<img src="/assets/images/bg.jpg" alt="no-des" class="absolute inset-0 -z-20 w-full h-full hidden md:block">
 			<slot />
 		</div>
 		<Footer/>

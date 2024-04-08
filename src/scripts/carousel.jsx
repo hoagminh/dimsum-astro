@@ -1,32 +1,30 @@
 const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".slide");
-const slide = document.querySelector(".slide");
 
+// biome-ignore lint/style/useSingleVarDeclarator: <explanation>
 let i = 0,
   j = 1,
-  rot = 0,
-  intervalId,
-  intervalImg;
+  intervalId;
 
 const intervalFn = () => {
   intervalId = setInterval(() => {
     carousel.style.rotate = `-${++i * 90}deg`;
-    intervalImgRot();
+
+    // biome-ignore lint/complexity/noForEach: <explanation>
+    slides.forEach((slide) => {
+      slide.style.rotate = `${i * 90}deg`;
+      console.log("slide", slide);
+    });
+
     document.querySelector(".slide.active").classList.remove("active");
     const activeSlide = document.querySelector(`.slide:nth-child(${++j})`);
     activeSlide.classList.add("active");
+    // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
     j === 4 && (j = 0);
   }, 7000);
 };
 
-const intervalImgRot = () => {
-  for (let index = 0; index < slides.length; index++) {
-    slides[index].style.transform = `rotate(${-90}deg)`;
-  }
-};
-
 intervalFn();
-//setInterval(intervalImgRot, 7000);
 
 // controlLinks.forEach((control) => {
 //   control.addEventListener("click", () => {
