@@ -13,7 +13,6 @@ const intervalFn = () => {
     // biome-ignore lint/complexity/noForEach: <explanation>
     slides.forEach((slide) => {
       slide.style.rotate = `${i * 90}deg`;
-      console.log("slide", slide);
     });
 
     document.querySelector(".slide.active").classList.remove("active");
