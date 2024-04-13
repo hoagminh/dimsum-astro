@@ -1,0 +1,31 @@
+{
+  "home": {
+    "title": "Dimsum",
+    "des": "Dimsum là một món ăn truyền thống của Trung Quốc, với lớp vỏ bột mỏng bên ngoài và nhân bên trong: có thể là mặn hoặc ngọt, sau đó được chiên, hấp, v.v. Dimsum theo phiên âm quốc tế là \"thunder point\", trong tiếng Việt được đọc là dim sum, hiểu đơn giản dim sum có nghĩa là một bữa ăn thường được ăn vào buổi sáng."
+  },
+  "about": {
+    "firstTitle": "<0>Top</0> Những <1>Món Ăn </1> Sẽ Khiến Bạn <2> Yêu Thích </2>",
+    "firstDes": "Với hương vị độc đáo trải dài từ ẩm thực truyền thống đến hiện đại, mỗi món ăn đều hứa hẹn mang đến cho bạn trải nghiệm ẩm thực khó quên. Hãy sẵn sàng khám phá và thưởng thức những món ăn này!",
+    "secondTitle": "<0>Há Cảo <1>Kiều Ký</1> - Lão Tử </0>"
+  },
+  "food": {},
+  "contact": {
+    "title": "Sẽ Rất <0>Dễ Dàng</0> Nếu <1>Đặt Hàng</1> Qua <2>Ứng Dụng</2>",
+    "des": "Tất cả những gì bạn cần làm là tải xuống một trong những ứng dụng giao hàng tốt nhất và đặt hàng. Nhiều công ty hiện đang lựa chọn phát triển ứng dụng di động để nâng cao dịch vụ giao đồ ăn của mình."
+  },
+  "Home": "Trang chủ",
+  "About": "Về chúng tôi",
+  "Food": "Dồ ăn",
+  "Contact": "Liên hệ",
+  "Foody.vn is a website that provides information, reviews, and food ordering from restaurants and eateries. Foody integrates convenient food delivery service through Now.": "Foody.vn là trang web cung cấp thông tin, đánh giá, và đặt món ăn từ các nhà hàng và quán ăn. Foody tích hợp dịch vụ giao đồ ăn tiện lợi thông qua Now.",
+  "About Us": "Về chúng tôi",
+  "Service Us": "Dịch vụ",
+  "Company": "Công ty",
+  "Store": "Cửa hàng",
+  "Partnership": "Partnership",
+  "Terms of Use": "Terms of Use",
+  "Privacy": "Privacy",
+  "Sitemap": "Sitemap",
+  "Feedback": "Phản hồi",
+  "Your feedback helps us improve! Share your thoughts to enhance your experience and our service.": "Your feedback helps us improve! Share your thoughts to enhance your experience and our service."
+}

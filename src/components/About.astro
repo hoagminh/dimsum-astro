@@ -1,35 +1,33 @@
 ---
+import { t } from "i18next"
 import '../styles/about.css'
-
+import { Trans } from "astro-i18next/components"
 ---
 <section id="about" class="py-28">
     <div class="container mx-auto px-3">
         <div class="flex flex-col gap-28">
             <div class="flex flex-col items-center text-white">
-                <h2 class="text-4xl md:text-5xl font-bold text-center md:max-w-[50%]">
-                    <span class="text-red-500">Top</span> Những <span class="text-yellow-500">Món Ăn</span> Sẽ Khiến Bạn <span class="text-red-500">Yêu Thích</span>
+              <h2 class="text-4xl md:text-5xl font-bold text-center md:max-w-[50%]">
+                  <Trans i18nKey="about.firstTitle">
+                    <span class="text-red-500">Top</span> Dishes <span class="text-yellow-500"> That Will</span> Make You <span class="text-red-500"> Love </span>
+                  </Trans>
                 </h2>
-                <p class="mt-5 md:mt-10 md:max-w-[50%] md:text-lg text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-                  been the industry's standard dummy text ever since the 1500s</p>
+                <p class="mt-5 md:mt-10 md:max-w-[50%] md:text-lg text-center">{t("about.firstDes")}</p>
                 <div class="flex gap-5 mt-7 flex-wrap justify-center">
-                    <button type="button" class="px-4 py-2 rounded-3xl border border-white bg-red-400">Dim sum</button>
-                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">Panacotta</button>
-                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">Dumplings</button>
-                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">Yaourt</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white bg-red-400">{t("Dimsum")}</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">{t("Panacotta")}</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">{t("Dumplings")}</button>
+                    <button type="button" class="px-4 py-2 rounded-3xl border border-white">{t("Yaourt")}</button>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row">
                 <div class="flex flex-col md:w-[40%] order-last md:-order-last">
                     <img src="/assets/images/artbody.png" alt="chief" class="w-[80%] mx-auto">
                     <div class="text-white">
-                        <h2 class="text-4xl md:text-5xl font-black">Há Cảo <span class="text-red-500">Kiều Ký</span> - Lão Tử </h2>
-                        <p class="mt-5 md:mt-10 md:text-lg text-justify font-poppins">Nhà hàng dimsum San Fu Lou là một trong những địa chỉ chuyên món ngon 
-                          Trung Hoa rất được yêu thích tại Sài Gòn. Thiên đường ẩm thực Quảng Đông 
-                          này có đa dạng các loại dimsum trứ danh như bánh bao trứng muối Phong 
-                          Sa, há cảo tôm sò điệp tươi, há cảo vịt,... Bên cạnh dimsum, thực khách cũng
-                          có thể thưởng thức các món ngon khác như gà tiềm trúc xanh, cơm chiên 
-                          Quảng Đông,... Không gian ăn uống cũng mang đậm kiến trúc Quảng Đông 
-                          với những dãy bàn ghế gỗ, đèn lồng đỏ treo trần rất thu hút.</p>
+                        <Trans i18nKey="about.secondTitle">
+                          <h2 class="text-4xl md:text-5xl font-black">Hao <span class="text-red-500">Kieu Ky</span> - Lao Tzu </h2>
+                        </Trans>
+                        <p class="mt-5 md:mt-10 md:text-lg text-justify font-poppins">{t("San Fu Lou dimsum restaurant is one of the most popular addresses specializing in Chinese delicacies in Saigon. This Cantonese culinary paradise has a variety of famous dimsums such as Phong Sa salted egg dumplings, fresh scallop shrimp dumplings, duck dumplings,... Besides dimsum, diners can also enjoy other dishes. Other delicious dishes include green bamboo chicken, Cantonese fried rice, etc. The dining space also has strong Cantonese architecture with rows of wooden tables and chairs, and very attractive red lanterns hanging from the ceiling.")}</p>
                     </div>
                 </div>
                 

@@ -20,7 +20,7 @@ const intervalFn = () => {
     activeSlide.classList.add("active");
     // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
     j === 4 && (j = 0);
-  }, 7000);
+  }, 5000);
 };
 
 intervalFn();

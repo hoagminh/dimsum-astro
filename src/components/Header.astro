@@ -1,4 +1,6 @@
 ---
+import { t } from "i18next"
+import { LanguageSelector } from "astro-i18next/components";
 import MobileNav from "./MobileNav.astro";
 
 
@@ -6,18 +8,34 @@ import MobileNav from "./MobileNav.astro";
 ---
 <header class="bg-transparent backdrop-blur-md fixed top-0 inset-x-0 z-50">
     <div class="container mx-auto px-3 flex justify-between items-center">
-        <ul class="hidden md:flex text-white justify-between gap-16">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    
         <div class="py-4"><img src="/assets/images/logo-foody.png" alt="Logo"/></div>
-        
         <ul class="hidden md:flex text-white justify-between gap-16">
-            <li><a href="#food">Food</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="item active"><a  href="#home">{t("Home")}</a></li>
+            <li class="item"><a href="#about">{t("About")}</a></li>
+            <li class="item"><a href="#food">{t("Food")}</a></li>
+            <li class="item"><a href="#contact">{t("Contact")}</a></li>
         </ul>
-        
+        <LanguageSelector showFlag={true} class="languages rounded-md py-1 text-gray-700 shadow-md border-none outline-none invisible lg:visible"/>
         <MobileNav/>
     </div>
 </header>
+
+<style>
+    .item a{
+        font-weight: 600;
+    }
+    .item.active {
+        color: #eab308;
+    }
+</style>
+
+<script>
+    const items = document.querySelectorAll(".item")
+
+    items.forEach((item) => {
+        item.addEventListener("click", () => {
+            document.querySelector(".item.active")?.classList.remove("active")
+            item.classList.add('active');
+        })
+    })
+</script>

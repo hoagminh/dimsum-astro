@@ -1,0 +1,31 @@
+{
+  "home": {
+    "title": "Dimsum",
+    "des": "Dimsum is a traditional Chinese dish, with a thin layer of dough on the outside and a filling inside: It can be salty or sweet, then fried, steamed, etc. Dimsum with the international transliteration is \"thunder point\", in Vietnamese it is read as dim sum, simply understood dim sum means a meal usually eaten in the morning."
+  },
+  "about": {
+    "firstTitle": "<0>Top</0> Dishes <1> That Will</1> Make You <2> Love </2>",
+    "firstDes": "With unique flavors ranging from traditional to modern cuisine, each dish promises to provide you with an unforgettable culinary experience. Get ready to explore and enjoy these dishes!",
+    "secondTitle": "<0>Hao <1>Kieu Ky</1> - Lao Tzu </0>"
+  },
+  "food": {},
+  "contact": {
+    "title": "It Will Be <0>Very Easy</0> To <1>Order</1> Through <2>The App</2>",
+    "des": "All you need to do is download one of the best delivery apps and place your order. Many companies are now opting for mobile app development to enhance their food delivery services."
+  },
+  "Home": "Home",
+  "About": "About",
+  "Food": "Food",
+  "Contact": "Contact",
+  "Foody.vn is a website that provides information, reviews, and food ordering from restaurants and eateries. Foody integrates convenient food delivery service through Now.": "Foody.vn is a website that provides information, reviews, and food ordering from restaurants and eateries. Foody integrates convenient food delivery service through Now.",
+  "About Us": "About Us",
+  "Service Us": "Service Us",
+  "Company": "Company",
+  "Store": "Store",
+  "Partnership": "Partnership",
+  "Terms of Use": "Terms of Use",
+  "Privacy": "Privacy",
+  "Sitemap": "Sitemap",
+  "Feedback": "Feedback",
+  "Your feedback helps us improve! Share your thoughts to enhance your experience and our service.": "Your feedback helps us improve! Share your thoughts to enhance your experience and our service."
+}
